@@ -1,5 +1,5 @@
 # BLE-jammer
-BLE (Bluetooth low energy) jammer using nRF2401+ modules and Maple Mini (STM32)
+BLE (Bluetooth low energy) jammer using nRF24L01+ modules and Maple Mini (STM32)
 
 ## Brief overview
 BLE uses 40 channels, 3 of which are used for advertising and the other 37 are used for data transmission.
@@ -17,10 +17,10 @@ This is far more feasible than jamming all 40 channels with a wideband jammer as
 
 ## Project components
 1. 1x Maple Mini (STM32) or Arduino
-2. 3x nRF2401+
+2. 3x nRF24L01+
 
-## nRF2401+
-The nRF2401+ (by Nordic Semiconductor) is a highly integrated, 
+## nRF24L01+
+The nRF24L01+ (by Nordic Semiconductor) is a highly integrated, 
 ultra low power (ULP) 2Mbps RF transceiver for the 2.4GHz ISM (Industrial, 
 Scientific and Medical) band. 
 
@@ -35,6 +35,6 @@ Scientific and Medical) band.
 * Minimum number of external components
 * Pins broken out : VCC, CE, CSN, SCK, MOSI, MISO, IRQ, GND
 
-nRF2401+ is a narrowband tranceiver (~2MHz) but that works to our advantage as BLE is also narrowband by design (~2MHz).
+nRF24L01+ is a narrowband tranceiver (~2MHz) but that works to our advantage as BLE is also narrowband by design (~2MHz).
 
 > Disclaimer: This project is for educational purposes only. How you use this information is your own responsibility. I will not be held accountable for any illegal activiies.
