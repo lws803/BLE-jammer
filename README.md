@@ -12,6 +12,13 @@ On newer BLE devices, advertising uses all 3 channels, hence the need to generat
 
 This is far more feasible than jamming all 40 channels with a wideband jammer as it risks affecting other network such as WiFi.
 
+<img src="https://user-images.githubusercontent.com/7874219/85138533-8295e200-b275-11ea-97c1-f21c1f8e7b08.png" width="600">
+
+
+## Project components
+1. 1x Maple Mini (STM32) or Arduino
+2. 3x nRF2401+
+
 ## nRF2401+
 The nRF2401+ (by Nordic Semiconductor) is a highly integrated, 
 ultra low power (ULP) 2Mbps RF transceiver for the 2.4GHz ISM (Industrial, 

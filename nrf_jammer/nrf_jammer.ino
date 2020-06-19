@@ -21,21 +21,20 @@ void setup() {
   radio.setDataRate(RF24_2MBPS);
   radio.stopListening();
 
-  delay(100);
-
+  delay(1000);
   radio2.begin();
   radio2.setAutoAck(false);
   radio2.setPALevel(RF24_PA_HIGH);
   radio2.setDataRate(RF24_2MBPS);
   radio2.stopListening();
-  delay(100);
+  delay(1000);
 
   radio3.begin();
   radio3.setAutoAck(false);
   radio3.setPALevel(RF24_PA_HIGH);
   radio3.setDataRate(RF24_2MBPS);
   radio3.stopListening();
-  delay(100);
+  delay(1000);
 }
 
 
