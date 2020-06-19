@@ -29,3 +29,5 @@ Scientific and Medical) band.
 * Pins broken out : VCC, CE, CSN, SCK, MOSI, MISO, IRQ, GND
 
 nRF2401+ is a narrowband tranceiver (~2MHz) but that works to our advantage as BLE is also narrowband by design (~2MHz).
+
+> Disclaimer: This project is for educational purposes only. How you use this information is your own responsibility. I will not be held accountable for any illegal activiies.
