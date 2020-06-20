@@ -16,7 +16,8 @@ This is far more feasible than jamming all 40 channels with a wideband jammer as
 
 <img src="https://user-images.githubusercontent.com/7874219/85138533-8295e200-b275-11ea-97c1-f21c1f8e7b08.png" width="600">
 
-Based on the above spectrogram, we can see that all 3 channels (2402MHz, 2426MHz and 2480MHz) are clearly flooded. This would prevent BLE
+Based on the above spectrogram, we can see that all 3 channels (2402MHz, 2426MHz and 2480MHz) are
+clearly flooded (blue is silence, green and other colors represent a signal). This would prevent BLE
 scanners from reading other BLE advertising transmissions.
 
 
