@@ -5,6 +5,8 @@ BLE (Bluetooth low energy) jammer using nRF24L01+ modules and Maple Mini (STM32)
 BLE uses 40 channels, 3 of which are used for advertising and the other 37 are used for data transmission.
 Data transmission on the other 37 channels are usually done with adaptive frequency hopping to minimize interference.
 
+<img src="https://www.rfwireless-world.com/images/BLE-frequency-channels.jpg" width="600">
+
 On the other hand, BLE discovery is made possible by 3 advertising channels (2402MHz, 2426MHz and 2480MHz).
 These 3 advertising channels transmit the characteristics and Mac Address of the device.
 On newer BLE devices, advertising uses all 3 channels, hence the need to generate noise on all
