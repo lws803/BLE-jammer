@@ -20,6 +20,16 @@ Based on the above spectrogram, we can see that all 3 channels (2402MHz, 2426MHz
 clearly flooded (blue is silence, green and other colors represent a signal). This would prevent BLE
 scanners from reading other BLE advertising transmissions.
 
+To reproduce the above outcome, we will use 3 nRF24L01+ modules and transmit a single character `"x"` repeatedly
+using `writeFast`. This ensures that the module transmits without **auto-acknowledgement** and **auto-retry** which are features of the chipset turned on.
+
+`radio2.setAutoAck(false);` may not be needed with `writeFast`.
+
+We also set the module's data rate to **2Mbps** so that it will utilize a wider band (2Mhz) instead of (1Mhz) to cover a larger bandwidth for jamming.
+
+```C++
+radio2.setDataRate(RF24_2MBPS);
+```
 
 ## Project components
 1. 1x Maple Mini (STM32) or Arduino
