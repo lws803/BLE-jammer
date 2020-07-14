@@ -47,7 +47,7 @@ void setup() {
 
 
 void loop() {
-  const char text[] = "x"; //just some random string
+  byte text = 0; //just some random string
   radio.writeFast(&text, sizeof(text));
   radio3.writeFast(&text, sizeof(text));
   radio2.writeFast(&text, sizeof(text));
