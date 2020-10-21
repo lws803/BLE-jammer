@@ -53,4 +53,9 @@ Scientific and Medical) band.
 
 nRF24L01+ is a narrowband tranceiver (~2MHz) but that works to our advantage as BLE is also narrowband by design (~2MHz).
 
+## Schematics
+
+<img src="https://user-images.githubusercontent.com/7874219/96770057-94011d80-1412-11eb-9f14-6b99a9cd8875.png" width="600">
+
+
 > Disclaimer: This project is for educational purposes only. How you use this information is your own responsibility. I will not be held accountable for any illegal activiies.
