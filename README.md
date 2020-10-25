@@ -1,5 +1,5 @@
-# BLE-jammer
-BLE (Bluetooth low energy) jammer using nRF24L01+ modules and Maple Mini (STM32)
+# Bluetooth Low Energy jammer
+BLE (Bluetooth low energy) jammer using nRF24L01+ modules and a simple STM32 microtroller like the Maple Mini/ Bluepill
 
 ## Brief overview
 BLE uses 40 channels, 3 of which are used for advertising and the other 37 are used for data transmission.
@@ -58,4 +58,4 @@ nRF24L01+ is a narrowband tranceiver (~2MHz) but that works to our advantage as 
 <img src="https://user-images.githubusercontent.com/7874219/96822323-5cb75e80-145c-11eb-900e-d730055d1591.png" width="600">
 
 
-> Disclaimer: This project is for educational purposes only. How you use this information is your own responsibility. I will not be held accountable for any illegal activiies.
+> Disclaimer: This project is for educational purposes only. How you use this information is your own responsibility. I will not be held accountable for any illegal activities.
