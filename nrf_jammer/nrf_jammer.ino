@@ -10,13 +10,14 @@
 #include <RF24.h>
 
 
-RF24 radio(PC14, PA3); // CE, CSN
-RF24 radio2(PA0, PA1);
-RF24 radio3(PA2, PB0);
+RF24 radio(PA0, PA1); // CE, CSN
+RF24 radio2(PA2, PA3);
+RF24 radio3(PB0, PB1);
 
 void setup() {
-  pinMode(D33, OUTPUT);
-  digitalWrite(D33, HIGH);
+  pinMode(PC13, OUTPUT);
+  delay(1000);
+  digitalWrite(PC13, LOW);
 
   radio.begin();
   radio.setAutoAck(false);  // Very important setting
@@ -42,7 +43,7 @@ void setup() {
   radio3.setChannel(2);
   delay(1000);
 
-  digitalWrite(D33, LOW);
+  digitalWrite(PC13, HIGH);
 }
 
 
