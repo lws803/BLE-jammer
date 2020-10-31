@@ -16,10 +16,16 @@ RF24 radio3(PB0, PB1);
 
 void setup() {
   pinMode(PC13, OUTPUT);
+  radio.begin();
+  radio2.begin();
+  radio3.begin();
+  radio.powerDown();
+  radio2.powerDown();
+  radio3.powerDown();
   delay(1000);
   digitalWrite(PC13, LOW);
 
-  radio.begin();
+  radio.powerUp();
   radio.setAutoAck(false);  // Very important setting
   radio.setPALevel(RF24_PA_HIGH);
   radio.setDataRate(RF24_2MBPS);
@@ -27,7 +33,7 @@ void setup() {
   radio.setChannel(80);
   delay(1000);
 
-  radio2.begin();
+  radio2.powerUp();
   radio2.setAutoAck(false);
   radio2.setPALevel(RF24_PA_HIGH);
   radio2.setDataRate(RF24_2MBPS);
@@ -35,7 +41,7 @@ void setup() {
   radio2.setChannel(26);
   delay(1000);
 
-  radio3.begin();
+  radio3.powerUp();
   radio3.setAutoAck(false);
   radio3.setPALevel(RF24_PA_HIGH);
   radio3.setDataRate(RF24_2MBPS);
